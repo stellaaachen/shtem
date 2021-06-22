@@ -15,7 +15,7 @@
     [(list? (car tree))
      (depth-aux (car lst) maax (+ current 1))]
     [else 
-    
+    )
 
 
 (define (depth lst)
