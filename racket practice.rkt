@@ -1,0 +1,27 @@
+#lang racket
+
+(define (sum-all-els lst)
+  (cond
+    [(empty? lst) 0]
+    [(number? lst) lst]
+    [(list? lst) (+(sum-all-els (car lst) (sum-all-els)(cdr lst))) 0]
+    [else 0]
+    )
+  )
+
+(define (depth-aux lst count)
+  (cond
+    [(empty? lst) (if (>count max) current max)]
+    [(list? (car tree))
+     (depth-aux (car lst) maax (+ current 1))]
+    [else 
+    )
+  )
+
+(define (depth lst)
+  (
+   cond
+    [(empty? lst) 0]
+    [else (depth-aux lst 0)]
+   )
+  )
